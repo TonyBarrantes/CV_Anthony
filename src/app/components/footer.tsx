@@ -17,14 +17,14 @@ const Footer = () => {
 
     return (
         <footer style={footerStyle}>
-                <Link href="tel:+506 84912832" style={linkStyle}>Teléfono</Link> |
-                <Link href="https://www.Instagram.com/tonybarrantes09" legacyBehavior>
+            <Link href="tel:+506 84912832" style={linkStyle}>Teléfono</Link> |
+            <Link href="https://www.Instagram.com/tonybarrantes09" legacyBehavior>
                 <a target="_blank" style={linkStyle}>Instagram</a>
-                </Link> |
-                <Link href="https://www.facebook.com/anthony.barrantesrojas.56?mibextid=LQQJ4d" style={linkStyle}>Facebook</Link> |
-                <Link href="https://twitter.com/Tony_barra09" legacyBehavior>
-                    <a target="_blank" style={linkStyle}>Twitter</a>
-                </Link> 
+            </Link> |
+            <Link href="https://www.facebook.com/anthony.barrantesrojas.56?mibextid=LQQJ4d" style={linkStyle}>Facebook</Link> |
+            <Link href="https://twitter.com/Tony_barra09" legacyBehavior>
+                <a target="_blank" style={linkStyle}>Twitter</a>
+            </Link>
         </footer>
     );
 };

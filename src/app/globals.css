@@ -3,59 +3,38 @@ body {
   font-family: Arial, sans-serif;
 }
 
-
-
-
-/* .About {
+.About {
   height: 40rem;
   display: flex;
   padding: 2rem;
   margin-top: 5rem;
   margin-bottom: 3rem;
   text-align: center;
-} */
-
-
-.About {
-  height: 40rem;
-  display: flex;
-  padding: 2rem;
-  margin-top: 5rem; /* Este margen puede ser ajustado según sea necesario */
-  margin-bottom: 3rem;
-  text-align: center;
-  margin-top: -5rem; /* Margen negativo para compensar el espacio ocupado por la barra de navegación */
+  margin-top: -5rem;
+  margin-bottom: none;
 }
-
-
-
 
 .services {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  height: 30vh; /* Ajusta la altura al 100% del viewport */
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
 }
-
 
 .saludo {
   flex: 1;
 }
 
-
 .list-services {
   flex: 1;
 }
 
-
-h1, p, .btnp {
-  text-align: center;
-
-
- 
+h1,
+p,
+.btnp {
+  text-align: center
 }
 
-
-/* Navegación */
 .navegacion {
   height: 6rem;
   background-color: rgb(49, 49, 49);
@@ -63,225 +42,165 @@ h1, p, .btnp {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; /* Asegura que la navegación esté encima del contenido */
+  z-index: 1000;
 }
-
-
-
 
 .navegacion .nav {
   display: flex;
-  justify-content: space-around; /* Distribuye los botones uniformemente */
+  justify-content: space-around;
   align-items: center;
   height: 100%;
 }
 
-
-
-
 .navegacion .nav a {
   text-decoration: none;
-  color: rgb(255, 255, 255); /* Color blanco */
-  font-weight: bold; /* Negrita */
-  padding: 1rem; /* Espaciado interno */
-  border-right: 1px solid rgb(255, 255, 255); /* Líneas divisoras */
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 1rem;
+  border-right: 1px solid rgb(255, 255, 255);
 }
-
-
-
 
 .navegacion .nav a:last-child {
-  border-right: none; /* Elimina la línea divisora del último elemento */
+  border-right: none;
 }
-
-
-
 
 .navegacion .nav a:hover {
-  color: var(--hover-color); /* Puedes definir un color de hover en :root */
+  color: var(--hover-color);
 }
 
-
-
-
-/* Contenedor principal */
 .container {
-  padding-top: 7rem; /* Ajuste para evitar que el contenido sea tapado por la barra de navegación */
+  padding-top: 7rem;
 }
 
-
-/* Ajustamos el tamaño del título "Mis Proyectos" */
 .projct {
-  font-size: 36px; /* Ajusta el tamaño según tu preferencia */
+  font-size: 46px;
 }
-
-
-
 
 .carousel-container {
   width: 100%;
-  background-color:rgb(255, 102, 0) /* Reemplaza "colorDeFondo" con el color que desees */
+  background-color: rgb(101, 110, 109)
 }
 
-/* Ajusta según tu preferencia */
 .AlmacenContainer {
   padding: 20px;
   text-align: center;
 }
 
-
-/* Links personalizados */
 .rLink {
   text-decoration: none;
   color: white;
 }
 
-
-
-
 .rLink:hover {
   cursor: pointer;
   color: white;
 }
-/*
-.imagenCircular {
-  border-radius: %;
-  overflow: hidden;
-}
-.imagenCircular img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
-
 
 .me {
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center; /* Alinea verticalmente el contenido */
+  align-items: center;
 }
-
 
 .fotoMe {
-  width: 200px; /* Ajusta el ancho según sea necesario */
+  width: 200px;
   height: 200px;
-  margin-right: 10px; /* Ajusta el margen derecho para separar la imagen del texto */
+  margin-right: 10px;
 }
-
 
 .containerMe {
-    width: 50%; /* Ancho de la columna del texto */
-    padding-left: 0px; /* Espacio entre la imagen y el texto */
-    flex: 1; /* Permite que el contenedor del texto ocupe el espacio restante */
+  width: 50%;
+  padding-left: 0px;
+  flex: 1;
 }
-
 
 .imagenCircular {
-  border-radius: 50%; /* Para mantener la forma circular de la imagen */
-  overflow: hidden; /* Para ocultar partes de la imagen que se salgan del círculo */
+  border-radius: 50%;
+  overflow: hidden;
 }
-
 
 .imagenCircular img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-
 
 body {
   background-color: rgb(49, 49, 49);
 }
- 
+
 .seccionproj {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra los elementos horizontalmente */
+  align-items: center;
 }
-
 
 .projct {
-  margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+  margin-top: 50px;
 }
-
 
 .Carousel {
-  width: 50%; /* Ajusta el ancho del carrusel según tus preferencias */
-  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+  width: 50%;
+  margin-top: 20px;
 }
-
 
 .about {
   display: flex;
   justify-content: center;
 }
 
-
 .photo {
-  margin-right: 20px; /* Espacio entre la imagen y el texto */
+  margin-right: 20px;
 }
-
 
 .text-center {
   text-align: center;
 }
 
-
 .text-center {
   text-align: center;
 }
-
 
 .ml-4 {
-  margin-left: 20px; /* Margen izquierdo de 20px */
+  margin-left: 20px;
 }
-
 
 .main {
   display: flex;
 }
 
-
 p {
-  margin: 0; /* Elimina el margen predeterminado del párrafo */
+  margin: 0;
 }
-
 
 .presentacion {
   padding: 20px;
 }
 
-/* components/CallToAction.css */
-
 .call-to-action {
-  text-align: center; /* Centrar el contenido */
+  text-align: center;
 }
 
 .call-to-action h2 {
-  margin-bottom: 20px; /* Espacio inferior para separar del párrafo */
+  margin-bottom: 20px;
 }
-
-/* components/CallToAction.css */
 
 .contact-button {
   display: block;
-  margin: 0 auto; /* Esto centra el botón horizontalmente */
+  margin: 0 auto;
 }
 
 .center-v {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  /*align-items: center;*/ /* Centra verticalmente */
-  height: 80vh; /* Establece la altura de la sección al 100% del viewport height */
+  justify-content: center;
+  height: 80vh;
 }
 
-
-/* Establece el estilo de las líneas horizontales */
 hr {
-  margin: 0; /* Elimina el margen predeterminado de las líneas */
-  border: none; /* Elimina el borde de las líneas */
-  border-top: 1px solid rgb(255, 102, 0); /* Establece un borde superior de 1px sólido */
+  margin: 0;
+  border: none;
+  border-top: 3px solid rgb(255, 102, 0);
 }
 
 .me {
@@ -303,8 +222,7 @@ hr {
 
 .contenedor {
   display: flex;
-  /* border: 2px solid #ccc; */ /* Esta línea elimina el borde */
-  border-radius: 10px; /* Borde redondeado */
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -315,7 +233,7 @@ hr {
 
 .containerMe {
   padding: 20px;
-  flex-grow: 1; /* Esto asegura que el contenido ocupe el espacio restante */
+  flex-grow: 1;
 }
 
 
@@ -331,23 +249,23 @@ hr {
 .section-wrapper h2,
 .section-wrapper h3,
 .section-wrapper p {
-  color: white; /* Color blanco para los títulos y textos */
+  color: white;
 }
 
 .imagenPresentacion {
-  margin-top: 20px; /* Puedes ajustar el margen superior según sea necesario */
+  margin-top: 20px;
 }
 
 .imagenPresentacion img {
-  width: 200px; /* Ancho de la imagen */
-  height: auto; /* Altura automática para mantener la proporción */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #call {
   text-align: center;
-  margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+  margin-top: 50px;
 }
 
 h1 {
@@ -376,10 +294,9 @@ p {
 }
 
 .image-container {
-  margin-top: 20px; /* Ajusta el margen superior de la imagen según sea necesario */
+  margin-top: 20px;
 }
 
 .image-container {
-  margin-top: 20px; /* Ajusta el margen según sea necesario */
+  margin-top: 20px;
 }
-
