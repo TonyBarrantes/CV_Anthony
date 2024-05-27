@@ -231,10 +231,6 @@ export default function Presentacion() {
                     </div>
                 </div>
             </main>
-            {/* Nueva imagen debajo del texto */}
-            <div className="nueva-imagen">
-                <Image src="/image/imagen20.jpg" width={300} height={200} alt="Nueva Imagen" />
-            </div>
         </div>
     )
 }
