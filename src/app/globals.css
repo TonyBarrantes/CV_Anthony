@@ -1,33 +1,402 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+
+
+/* .About {
+  height: 40rem;
+  display: flex;
+  padding: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+} */
+
+
+.About {
+  height: 40rem;
+  display: flex;
+  padding: 2rem;
+  margin-top: 5rem; /* Este margen puede ser ajustado según sea necesario */
+  margin-bottom: 3rem;
+  text-align: center;
+  margin-top: -5rem; /* Margen negativo para compensar el espacio ocupado por la barra de navegación */
 }
+
+
+
+
+.services {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 30vh; /* Ajusta la altura al 100% del viewport */
+}
+
+
+.saludo {
+  flex: 1;
+}
+
+
+.list-services {
+  flex: 1;
+}
+
+
+h1, p, .btnp {
+  text-align: center;
+
+
+ 
+}
+
+
+/* Navegación */
+.navegacion {
+  height: 6rem;
+  background-color: rgb(49, 49, 49);
+  border-bottom: 1px solid var(--btn);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que la navegación esté encima del contenido */
+}
+
+
+
+
+.navegacion .nav {
+  display: flex;
+  justify-content: space-around; /* Distribuye los botones uniformemente */
+  align-items: center;
+  height: 100%;
+}
+
+
+
+
+.navegacion .nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255); /* Color blanco */
+  font-weight: bold; /* Negrita */
+  padding: 1rem; /* Espaciado interno */
+  border-right: 1px solid rgb(255, 255, 255); /* Líneas divisoras */
+}
+
+
+
+
+.navegacion .nav a:last-child {
+  border-right: none; /* Elimina la línea divisora del último elemento */
+}
+
+
+
+
+.navegacion .nav a:hover {
+  color: var(--hover-color); /* Puedes definir un color de hover en :root */
+}
+
+
+
+
+/* Contenedor principal */
+.container {
+  padding-top: 7rem; /* Ajuste para evitar que el contenido sea tapado por la barra de navegación */
+}
+
+
+/* Ajustamos el tamaño del título "Mis Proyectos" */
+.projct {
+  font-size: 36px; /* Ajusta el tamaño según tu preferencia */
+}
+
+
+
+
+.carousel-container {
+  width: 100%;
+  background-color:rgb(255, 102, 0) /* Reemplaza "colorDeFondo" con el color que desees */
+}
+
+/* Ajusta según tu preferencia */
+.AlmacenContainer {
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Links personalizados */
+.rLink {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+.rLink:hover {
+  cursor: pointer;
+  color: white;
+}
+/*
+.imagenCircular {
+  border-radius: %;
+  overflow: hidden;
+}
+.imagenCircular img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
+
+.me {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alinea verticalmente el contenido */
+}
+
+
+.fotoMe {
+  width: 200px; /* Ajusta el ancho según sea necesario */
+  height: 200px;
+  margin-right: 10px; /* Ajusta el margen derecho para separar la imagen del texto */
+}
+
+
+.containerMe {
+    width: 50%; /* Ancho de la columna del texto */
+    padding-left: 0px; /* Espacio entre la imagen y el texto */
+    flex: 1; /* Permite que el contenedor del texto ocupe el espacio restante */
+}
+
+
+.imagenCircular {
+  border-radius: 50%; /* Para mantener la forma circular de la imagen */
+  overflow: hidden; /* Para ocultar partes de la imagen que se salgan del círculo */
+}
+
+
+.imagenCircular img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(49, 49, 49);
+}
+ 
+.seccionproj {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+.projct {
+  margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+
+
+.Carousel {
+  width: 50%; /* Ajusta el ancho del carrusel según tus preferencias */
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+
+.photo {
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+
+.ml-4 {
+  margin-left: 20px; /* Margen izquierdo de 20px */
+}
+
+
+.main {
+  display: flex;
+}
+
+
+p {
+  margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
+
+
+.presentacion {
+  padding: 20px;
+}
+
+/* components/CallToAction.css */
+
+.call-to-action {
+  text-align: center; /* Centrar el contenido */
+}
+
+.call-to-action h2 {
+  margin-bottom: 20px; /* Espacio inferior para separar del párrafo */
+}
+
+/* components/CallToAction.css */
+
+.contact-button {
+  display: block;
+  margin: 0 auto; /* Esto centra el botón horizontalmente */
+}
+
+.center-v {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  /*align-items: center;*/ /* Centra verticalmente */
+  height: 80vh; /* Establece la altura de la sección al 100% del viewport height */
+}
+
+
+/* Establece el estilo de las líneas horizontales */
+hr {
+  margin: 0; /* Elimina el margen predeterminado de las líneas */
+  border: none; /* Elimina el borde de las líneas */
+  border-top: 1px solid rgb(255, 102, 0); /* Establece un borde superior de 1px sólido */
+}
+
+.me {
+  display: flex;
+}
+
+.imagenCircular {
+  flex-shrink: 0;
+  margin-right: 50px;
+}
+
+.presentacion {
+  padding: 20px;
+}
+
+.main {
+  margin: auto;
+}
+
+.contenedor {
+  display: flex;
+  /* border: 2px solid #ccc; */ /* Esta línea elimina el borde */
+  border-radius: 10px; /* Borde redondeado */
+  overflow: hidden;
+}
+
+.fotoMe {
+  width: 200px;
+  height: 200px;
+}
+
+.containerMe {
+  padding: 20px;
+  flex-grow: 1; /* Esto asegura que el contenido ocupe el espacio restante */
+}
+
+
+.texto-container {
+  padding: 20px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.section-wrapper h1,
+.section-wrapper h2,
+.section-wrapper h3,
+.section-wrapper p {
+  color: white; /* Color blanco para los títulos y textos */
+}
+
+.imagenPresentacion {
+  margin-top: 20px; /* Puedes ajustar el margen superior según sea necesario */
+}
+
+.imagenPresentacion img {
+  width: 200px; /* Ancho de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+#call {
+  text-align: center;
+  margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+
+.image-container {
+  margin-top: 20px; /* Ajusta el margen superior de la imagen según sea necesario */
+}
+
+.image-container {
+  margin-top: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.contact-button-container {
+  margin-top: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.contact-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
 }
