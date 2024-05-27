@@ -125,6 +125,83 @@
 // }
 
 
+// import Image from 'next/image';
+
+// export default function Presentacion() {
+//     return (
+//         <div className="presentacion">
+//             <main className="main d-flex">
+//                 <div className="contenedor">
+//                     <div className="fotoMe col-lg-6">
+//                         <div className="imagenCircular">
+//                             <Image src="/image/me.jpg" width={200} height={200} alt="ImagenTony" />
+//                         </div> 
+//                     </div>
+//                     <div className="containerMe col-lg-6">
+//                         <div className="texto-container">
+//                             <p className="text-left" style={{ margin: '0' }}>
+//                                 Anthony Barrantes Rojas<br />
+//                                 Ced: 2 0840 0580<br />
+//                                 Tel: +506 84912832<br />
+//                                 Direccion: Golfito, Puntarenas, Costa Rica<br />
+//                                 Estudiante de la Universidad de Costa Rica<br />
+//                                 Informatica Empresarial<br />
+//                             </p>
+//                             <div className="iconos">
+//                                 <a href=""></a>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </main>
+//         </div>
+//     )
+// }
+
+
+
+// import Image from 'next/image';
+
+// export default function Presentacion() {
+//     return (
+//         <div className="presentacion">
+//             <main className="main d-flex">
+//                 <div className="contenedor">
+//                     <div className="fotoMe col-lg-6">
+//                         <div className="imagenCircular">
+//                             <Image src="/image/me.jpg" width={200} height={200} alt="ImagenTony" />
+//                         </div> 
+//                     </div>
+//                     <div className="containerMe col-lg-6">
+//                         <div className="texto-container">
+//                             <p className="text-left" style={{ margin: '0' }}>
+//                                 Anthony Barrantes Rojas<br />
+//                                 Ced: 2 0840 0580<br />
+//                                 Tel: +506 84912832<br />
+//                                 Direccion: Golfito, Puntarenas, Costa Rica<br />
+//                                 Estudiante de la Universidad de Costa Rica<br />
+//                                 Informatica Empresarial<br />
+//                             </p>
+//                             <div className="iconos">
+//                                 <a href=""></a>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//                 {/* Nueva imagen debajo del texto */}
+//                 <div className="presentacionNueva">
+//                 <div className="nueva foto">
+//                     <div className="fotoNueva col-lg-6"></div>
+//                 <div className="nueva-imagen">
+//                     <Image src="/image/imagen20.jpg" width={300} height={200} alt="Nueva Imagen" />
+//                 </div>
+//                 </div>
+//                 </div>
+//             </main>
+//         </div>
+//     )
+// }
+
 import Image from 'next/image';
 
 export default function Presentacion() {
@@ -154,9 +231,11 @@ export default function Presentacion() {
                     </div>
                 </div>
             </main>
+            {/* Nueva imagen debajo del texto */}
+            <div className="nueva-imagen">
+                <Image src="/image/imagen20.jpg" width={300} height={200} alt="Nueva Imagen" />
+            </div>
         </div>
     )
 }
-
-
 
